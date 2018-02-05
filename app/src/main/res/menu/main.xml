@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/main_menu_group"
+        android:visible="true">
+
+        <item
+            android:id="@+id/filters"
+            android:icon="@drawable/ic_filter_list_white_24dp"
+            android:title="@string/filter"
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/filter_by_rating"
+                    android:title="@string/rating" />
+                <item
+                    android:id="@+id/filter_by_genres"
+                    android:title="@string/genres" />
+
+
+                <item
+                    android:id="@+id/filter_by_directors"
+                    android:title="@string/director" />
+            </menu>
+
+
+        </item>
+
+
+        <item
+            android:icon="@drawable/ic_sort_white_24dp"
+            android:title="@string/sort"
+            app:showAsAction="ifRoom">
+
+            <menu>
+                <item
+                    android:id="@+id/sort_by_title"
+                    android:title="@string/sort_by_title">
+                    <menu>
+                        <item
+                            android:id="@+id/sort_by_title_ascending"
+                            android:title="@string/ascending" />
+                        <item
+                            android:id="@+id/sort_by_title_descending"
+                            android:title="@string/descending" />
+
+                    </menu>
+
+                </item>
+                <item
+                    android:id="@+id/sort_by_year"
+                    android:title="@string/sort_by_year">
+                    <menu>
+                        <item
+                            android:id="@+id/sort_by_year_ascending"
+                            android:title="@string/ascending" />
+                        <item
+                            android:id="@+id/sort_by_year_descending"
+                            android:title="@string/descending" />
+
+                    </menu>
+                </item>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>
